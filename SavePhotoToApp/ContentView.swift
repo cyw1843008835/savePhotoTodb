@@ -28,8 +28,7 @@ struct ContentView: View {
         }.sheet(isPresented: self.$showImagePicker){
             PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$image)
         }
-        }
-    }
+        }.navigationViewStyle(StackNavigationViewStyle())    }
 }
 struct SecondView: View {
     @Binding  var showImagePicker: Bool
