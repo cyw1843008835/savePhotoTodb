@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2031DBA23E312020086EC94 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2031DB923E312020086EC94 /* File.swift */; };
 		D2C45FEB23D2BAB200CE6973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C45FEA23D2BAB200CE6973 /* AppDelegate.swift */; };
 		D2C45FED23D2BAB200CE6973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C45FEC23D2BAB200CE6973 /* SceneDelegate.swift */; };
 		D2C45FF023D2BAB200CE6973 /* SavePhotoToApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2C45FEE23D2BAB200CE6973 /* SavePhotoToApp.xcdatamodeld */; };
@@ -14,9 +15,13 @@
 		D2C45FF423D2BAB300CE6973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C45FF323D2BAB300CE6973 /* Assets.xcassets */; };
 		D2C45FF723D2BAB300CE6973 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C45FF623D2BAB300CE6973 /* Preview Assets.xcassets */; };
 		D2C45FFA23D2BAB300CE6973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C45FF823D2BAB300CE6973 /* LaunchScreen.storyboard */; };
+		D2C4600223D2BAD100CE6973 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4600123D2BAD100CE6973 /* PhotoCaptureView.swift */; };
+		D2C4600423D2BAE100CE6973 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4600323D2BAE100CE6973 /* ImagePicker.swift */; };
+		D2C4602923D3DC1500CE6973 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4602823D3DC1500CE6973 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2031DB923E312020086EC94 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D2C45FE723D2BAB200CE6973 /* SavePhotoToApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhotoToApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C45FEA23D2BAB200CE6973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C45FEC23D2BAB200CE6973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		D2C45FF623D2BAB300CE6973 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2C45FF923D2BAB300CE6973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C45FFB23D2BAB300CE6973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C4600123D2BAD100CE6973 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCaptureView.swift; path = ../../demo1/SwiftUI_002/SwiftUI_002/PhotoCaptureView.swift; sourceTree = "<group>"; };
+		D2C4600323D2BAE100CE6973 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = ../../demo1/SwiftUI_002/SwiftUI_002/ImagePicker.swift; sourceTree = "<group>"; };
+		D2C4602823D3DC1500CE6973 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,13 @@
 		D2C45FE923D2BAB200CE6973 /* SavePhotoToApp */ = {
 			isa = PBXGroup;
 			children = (
+				D2C4600323D2BAE100CE6973 /* ImagePicker.swift */,
+				D2C4600123D2BAD100CE6973 /* PhotoCaptureView.swift */,
 				D2C45FEA23D2BAB200CE6973 /* AppDelegate.swift */,
 				D2C45FEC23D2BAB200CE6973 /* SceneDelegate.swift */,
 				D2C45FF123D2BAB200CE6973 /* ContentView.swift */,
+				D2031DB923E312020086EC94 /* File.swift */,
+				D2C4602823D3DC1500CE6973 /* SwiftUIView.swift */,
 				D2C45FF323D2BAB300CE6973 /* Assets.xcassets */,
 				D2C45FF823D2BAB300CE6973 /* LaunchScreen.storyboard */,
 				D2C45FFB23D2BAB300CE6973 /* Info.plist */,
@@ -150,9 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2C45FF023D2BAB200CE6973 /* SavePhotoToApp.xcdatamodeld in Sources */,
+				D2C4602923D3DC1500CE6973 /* SwiftUIView.swift in Sources */,
 				D2C45FEB23D2BAB200CE6973 /* AppDelegate.swift in Sources */,
 				D2C45FF223D2BAB200CE6973 /* ContentView.swift in Sources */,
+				D2C4600423D2BAE100CE6973 /* ImagePicker.swift in Sources */,
+				D2031DBA23E312020086EC94 /* File.swift in Sources */,
 				D2C45FED23D2BAB200CE6973 /* SceneDelegate.swift in Sources */,
+				D2C4600223D2BAD100CE6973 /* PhotoCaptureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
