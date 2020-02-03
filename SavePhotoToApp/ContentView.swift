@@ -23,8 +23,13 @@ struct ContentView: View {
             Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
         }
             NavigationLink(destination: SecondView(showImagePicker: self.$showImagePicker,image: self.$image)) {
-                               Text("画面遷移する")
+           
+                Text("Placeholder1")
                            }
+            NavigationLink(destination: SecondView1(showImagePicker: self.$showImagePicker,image: self.$image)) {
+                      
+                           Text("Placeholder2")
+                                      }
         }.sheet(isPresented: self.$showImagePicker){
             PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$image)
         }
@@ -44,6 +49,25 @@ struct SecondView: View {
             Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
         }
         Text("画面遷移できました")
+        }.sheet(isPresented: self.$showImagePicker){
+            PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$image)
+        }
+    }
+}
+struct SecondView1: View {
+    @Binding  var showImagePicker: Bool
+    @Binding var image:Image?
+    var body: some View {
+        VStack{
+        image?.resizable()
+        .scaledToFit()
+        .clipShape(Circle())
+        Button(action: {
+            self.showImagePicker = true
+        }) {
+            Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
+        }
+        Text("画面遷移できました1")
         }.sheet(isPresented: self.$showImagePicker){
             PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$image)
         }
