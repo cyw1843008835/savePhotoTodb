@@ -47,6 +47,11 @@ struct SecondView: View {
             self.showImagePicker = true
         }) {
             Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
+              .background(Color.red)
+            .font(.system(size: 40))
+            .foregroundColor(Color.white)
+            .cornerRadius(90)
+            .padding(20)
         }
         Text("画面遷移できました")
         }.sheet(isPresented: self.$showImagePicker){
